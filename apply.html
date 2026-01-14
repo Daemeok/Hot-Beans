@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body>
+    <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans | Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bahnschrift:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="ApplyHere.js"></script>
+    <link rel="stylesheet" href="stylesheet1.css">
+    
+</head>
+
+
+    <header class="header-container">
+        <div class="logo-group">
+            <img class="logo-image" src="image.png" alt="Company Logo" />
+            <div class="header-title">
+                <a href="index.html">Hot Beans</a>
+            </div>
+        </div>
+
+        <ul class="header-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html">Apply Here</a></li>
+        </ul>
+    </header>
+    <main class="vacancyform">
+         <h1>Please Complete The Following Online Application Form </h1>
+            <h2>All Fields Marked With A * Are Required</h2>
+            <!--form that submits to a thank you holding page-->
+            <form name="VacancyApplicationForm" action="ThankYou.html" method="get">
+
+                <p>
+                    <label><span class="required">*</span> First Name:</label>
+                    <!--input text box-->
+                    <input type="text" id="fname" name="fname" />
+                    <br />
+                    <label id="fNameError" class="Error"></label>
+                </p>
+                <p>
+                    <label><span class="required">*</span> Last Name:</label>
+                    <!--input text box-->
+                    <input type="text" id="sname" name="sname" />
+                    <br />
+                    <label id="sNameError" class="Error"></label>
+                </p>
+                <p>
+                    <label><span class="required">*</span> Are you a UK resident?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="ukResidentYes" name="ukResident" value="Yes">
+                            <label for="ukResidentYes">Yes</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="ukResidentNo" name="ukResident" value="No">
+                            <label for="ukResidentNo">No</label>
+                        </div>
+                    </div>
+                    <label id="ukResidentError" class="Error"></label>
+                </p>
+                <p>
+                    <label><span class="required">*</span> Please your telephone contact details</label>
+                    <!--input text box-->
+                    <input type="text" id="telNo" name="telNo" />
+                    <br />
+                    <label id="telNoError" class="Error"></label>
+                </p>
+
+                <p>
+                    <label><span class="required">*</span> Please select the job you are applying for: </label>
+                    <!--input text box-->
+                    <select name="JobType" id="JobType">
+
+      <option value="Junior Web Developer">Junior Web Developer</option>
+      <option value="Senior Web Developer">Senior Web Developer</option>
+      <option value="Web Analyst">Web Analyst</option>
+      <option value="Resource Manager">Resource Manager</option>
+  
+                    </select>
+                    <br />
+                    <label id="JobTypeError"  class="Error"></label>
+                </p>
+
+                <p>
+                    <label for="txtAnyOtherInfo">Please enter any other information to support your application:</label>
+                    <!--input text area for free text entry-->
+                    <textarea id="txtAnyOtherInfo" name="txtAnyOtherInfo" rows="4" cols="50">
+                        </textarea>
+
+                </p>
+
+                <p>
+                    <!--button that on clicked runs the validation check javascript-->
+                    <button onclick="return ValidateVacancyForm()">Apply Now</button>
+                </p>
+
+
+            </form>
+    </main>
+    <footer>
+        <div class="header-copyright">
+            &copy; 2025 Hotbeans. All rights reserved. |
+        </div>
+    </footer>
+
+</body>
+</html>

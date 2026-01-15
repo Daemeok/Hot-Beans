@@ -135,14 +135,14 @@
         function handleContactSubmit(event) {
             event.preventDefault();
             
-            // Clear all error messages
+            
             document.getElementById('nameError').textContent = '';
             document.getElementById('emailError').textContent = '';
             document.getElementById('phoneError').textContent = '';
             document.getElementById('subjectError').textContent = '';
             document.getElementById('messageError').textContent = '';
             
-            // Get form values
+ 
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const phone = document.getElementById('phone').value.trim();
@@ -150,8 +150,7 @@
             const message = document.getElementById('message').value.trim();
             
             let isValid = true;
-            
-            // Validation
+   
             if (!name) {
                 document.getElementById('nameError').textContent = 'Name is required';
                 isValid = false;
@@ -176,17 +175,17 @@
             }
             
             if (isValid) {
-                // Here you would typically send the form data to a server
+               
                 console.log({name, email, phone, subject, message});
                 
-                // Show success message
+             
                 showThankYouMessage({
                     title: 'Message Sent!',
                     message: 'Thank you for reaching out. We\'ll get back to you shortly.',
                     details: `We received your message and will respond to ${email} as soon as possible.`
                 });
                 
-                // Reset form
+            
                 document.getElementById('contactForm').reset();
             }
         }
@@ -207,7 +206,7 @@
             `;
             document.body.appendChild(container);
             
-            // Auto-close after 5 seconds or on click
+     
             setTimeout(() => {
                 container.remove();
             }, 5000);
@@ -222,4 +221,5 @@
 
 </body>
 </html>
+
 

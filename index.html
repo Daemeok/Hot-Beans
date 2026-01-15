@@ -101,8 +101,7 @@
     </footer>
 
 <script>
-// Scroll-trigger animations: add `.is-visible` on enter, remove on exit.
-// Avoid re-adding while element remains intersecting to prevent repeated replays.
+
 (function(){
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const selectors = [
@@ -121,12 +120,12 @@
         entries.forEach(entry => {
             const el = entry.target;
             if(entry.isIntersecting){
-                // only add if not already visible
+          
                 if(!el.classList.contains('is-visible')){
                     el.classList.add('is-visible');
                 }
             } else {
-                // remove on exit so re-entering will replay
+         
                 if(el.classList.contains('is-visible')){
                     el.classList.remove('is-visible');
                 }
@@ -139,4 +138,5 @@
 </script>
 
 </body>
+
 </html>

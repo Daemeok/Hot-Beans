@@ -804,7 +804,6 @@ footer {
 .container {
     margin-top: 2rem;
     max-width: 1000px;
-    margin: 0 auto;
     padding: 2rem 1.5rem;
 }
 
@@ -1415,6 +1414,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 

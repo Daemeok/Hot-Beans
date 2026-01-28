@@ -800,14 +800,8 @@ footer {
     .main-content {
         padding: 1rem;
     }
-}
-.container {
-    margin-top: 2rem;
-    max-width: 1000px;
-    padding: 2rem 1.5rem;
-}
 
-.services-header {
+.services {
     text-align: center;
     margin-bottom: 4rem;
     padding: 3rem 2rem;
@@ -817,13 +811,13 @@ footer {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.services-header h1 {
+.services h1 {
     font-size: 2.8rem;
     margin: 0 0 1rem 0;
     font-weight: 800;
 }
 
-.services-header .lead {
+.services .lead {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
@@ -1414,6 +1408,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 

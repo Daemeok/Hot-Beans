@@ -774,7 +774,11 @@ footer {
     .main-content {
         padding: 1rem;
     }
-    
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
 .services {
     text-align: center;
     margin-bottom: 4rem;
@@ -1374,6 +1378,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 

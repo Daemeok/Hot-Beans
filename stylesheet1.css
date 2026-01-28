@@ -363,32 +363,6 @@ footer {
         outline: 3px solid #60a5fa; 
         outline-offset: 2px;
     }
-    .services {
-    margin-top: 5rem;
-    padding: 2.5rem 1.5rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    box-sizing: border-box;
-    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.services h1{
-    font-size: 28px;
-    padding-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.services p{
-    font-size: 20px;
-    text-align: center;
-}
-
 
 .service-grid {
     display: grid;
@@ -816,15 +790,6 @@ footer {
     margin: 0 0 1rem 0;
     font-weight: 800;
 }
-
-.services .lead {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-    opacity: 0.95;
-}
-
 
 .container {
     max-width: 1200px;
@@ -1408,6 +1373,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 
